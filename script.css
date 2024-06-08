@@ -9,6 +9,10 @@
     align-items: center; /* Centraliza os itens verticalmente */
 }
 
+.background-form header {
+    display: none; /* Esconde o cabeçalho para que a imagem de fundo cubra toda a tela */
+}
+
 .background-form form {
     z-index: 1; /* Mantém o formulário à frente da imagem de fundo */
     background-color: rgba(255, 255, 255, 0.9); /* Fundo levemente transparente */
@@ -18,13 +22,14 @@
     width: 80%; /* Ajusta a largura do formulário para 80% da largura da tela */
     max-width: 600px; /* Máximo de largura para evitar que fique muito largo */
     min-width: 300px; /* Mínimo de largura para garantir legibilidade */
+    margin: 0 20px; /* Adiciona margem para evitar que o formulário fique muito próximo das bordas da tela */
 }
 
 .background-form label,
 .background-form input,
 .background-form button {
     display: block; /* Faz cada elemento ser um bloco, ajudando no layout */
-    width: 90%; /* Faz cada elemento usar a largura total disponível */
+    width: 100%; /* Faz cada elemento usar a largura total disponível */
     margin-top: 10px; /* Espaço entre os elementos */
     align-items: center;
 }
