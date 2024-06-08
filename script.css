@@ -1,52 +1,57 @@
 .background-form {
-    position: relative; /* Contexto de posicionamento para z-index dos filhos */
-    height: 100vh; /* Define a altura para ocupar toda a tela */
-    background-image: url('https://rafaelshelby19.github.io/banco-de-dados/banco.jpg'); /* Define a imagem de fundo */
-    background-size: cover; /* Faz a imagem cobrir toda a área disponível */
-    background-position: center; /* Centraliza a imagem na tela */
-    display: flex; /* Faz com que os filhos se comportem como flex itens */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Centraliza os itens verticalmente */
+    position: relative;
+    height: 100vh;
+    background-image: url('https://rafaelshelby19.github.io/banco-de-dados/banco.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .background-form header {
-    display: none; /* Esconde o cabeçalho para que a imagem de fundo cubra toda a tela */
+    display: none;
 }
 
 .background-form form {
-    z-index: 1; /* Mantém o formulário à frente da imagem de fundo */
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo levemente transparente */
-    padding: 15px; /* Espaçamento interno */
-    border-radius: 8px; /* Bordas arredondadas para o formulário */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra leve para destaque */
-    width: 80%; /* Ajusta a largura do formulário para 80% da largura da tela */
-    max-width: 600px; /* Máximo de largura para evitar que fique muito largo */
-    min-width: 300px; /* Mínimo de largura para garantir legibilidade */
-    margin: 0 20px; /* Adiciona margem para evitar que o formulário fique muito próximo das bordas da tela */
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 20px;
 }
 
 .background-form label,
 .background-form input,
 .background-form button {
-    display: block; /* Faz cada elemento ser um bloco, ajudando no layout */
-    width: 100%; /* Faz cada elemento usar a largura total disponível */
-    margin-top: 10px; /* Espaço entre os elementos */
-    align-items: center;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .background-form input {
-    height: 40px; /* Altura fixa para input e botão */
-    padding: 0 10px; /* Padding interno */
-    border: 2px solid #ccc; /* Borda para identificação fácil */
-    border-radius: 4px; /* Bordas arredondadas */
+    height: 40px;
+    padding: 0 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
 }
 
 .background-form button {
-    background-color: #007BFF; /* Cor de fundo para o botão */
-    color: white; /* Cor do texto */
-    border-color: #007BFF; /* Cor da borda do botão */
-    height: 40px; /* Altura fixa para o botão */
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+    height: 40px;
 }
 
-  
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .background-form {
+        background-size: contain; /* Adjust background size */
+    }
+}
+
     
