@@ -7,8 +7,8 @@
          <img src="https://rafaelshelby19.github.io/banco-de-dados/banco.jpg" alt="Buraco Negro">
 "
     </header>
-    <form [formGroup]="資料庫" (ngSubmit)="onSubmit()">
-      <label for="nodeData">Node Data:</label>
+    <form [formGroup]="nodeData" (ngSubmit)="onSubmit()">
+      <label for="nodeData">資料庫:</label>
       <input id="nodeData" formControlName="nodeData">
       <button type="submit">Submit</button>
     </form>
